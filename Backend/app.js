@@ -28,11 +28,8 @@ app.use(express.json());
 
 // Enable CORS for the frontend application
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://book-stop-frontend.vercel.app/'],
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Specify allowed methods
-    allowedHeaders: ['Content-Type', 'Authorization', 'id'] // Explicitly allow the 'id' header
-
+    origin: ['http://localhost:5173'],
+    credentials: true
 }));
 
 // Handle preflight OPTIONS requests for CORS
