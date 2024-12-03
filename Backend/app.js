@@ -28,7 +28,7 @@ app.use(express.json());
 
 // Enable CORS for the frontend application
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://book-store-frontend-pied-nine.vercel.app'],
+    origin: ['http://localhost:5173', 'https://book-stop-frontend.vercel.app/'],
     credentials: true
 }));
 
